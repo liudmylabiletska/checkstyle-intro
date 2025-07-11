@@ -1,0 +1,10 @@
+[33m216a008[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhw-checkstyle-solution[m[33m)[m modific HelloWorld.java
+[33m4428f30[m Fixed naming issues and corrected indentation based on Checkstyle rules
+[33m1e58ac5[m added task requirements (#1084)
+[33mec48ac7[m make task autoapprove (#820)
+[33m87a0c1f[m Delete Travis CI config
+[33m83dcb68[m Update CI config
+[33m6f38017[m Merge pull request #119 from mate-academy/update-task
+[33m8c981e1[m update task: initialized all fields
+[33m31eec1c[m added requirements (#1)
+[33md87357b[m Initial commit
