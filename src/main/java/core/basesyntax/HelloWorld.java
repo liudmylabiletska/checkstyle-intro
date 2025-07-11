@@ -1,4 +1,4 @@
-package core.basesyntax.model;
+package core.basesyntax;
 
 import core.basesyntax.model.Cat;
 import core.basesyntax.model.Dog;
@@ -13,6 +13,7 @@ public class HelloWorld {
     public static void main(String[] args) {
         Dog dog = new Dog();
         Cat cat = new Cat();
+        System.out.println(cat.toString());
 
         HelloWorld helloWorld = new HelloWorld();
         helloWorld.initializeVariables();
@@ -21,24 +22,28 @@ public class HelloWorld {
     }
 
     private String getEvenNumbersFromOneToTen() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < 10; i++) {
             if (i % 2 == 0) {
-                result += i + " ";
+                result.append(i).append(" ");
             }
         }
-        return result;
+        return result.toString();
     }
 
     private void sayHello(String greeting) {
-        System.out.println("Hello, friend! I'm glad to see you! This class looks strange! "
+        System.out.println("Hello, friend! I'm glad to see you!"
+                +
+                " This class looks strange! "
                 + "Your task is to fix the Checkstyle issues in this file. "
-                + "Your goal is to run 'mvn clean package' and get the message 'BUILD SUCCESS'");
+                + "Your goal is to run `mvn clean package` "
+                +
+                "and receive the message `BUILD SUCCESS`.");
         System.out.println(greeting);
     }
 
     private void initializeVariables() {
-        message = "Hello, comrades!";
+        message = "Hello, friends!";
         System.out.println(message);
         year = LocalDate.now().getYear();
         System.out.println("It's the year " + year);
